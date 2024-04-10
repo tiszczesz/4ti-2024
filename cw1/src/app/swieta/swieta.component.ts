@@ -12,6 +12,6 @@ export class SwietaComponent {
     colors!:string[];
     constructor(){
       this.capacity = 8888;
-      this.colors = ["asddas ","bcvbcvbcb","sdfsfdsfs"];
+      this.colors = ["asddas ","bcvbcvbcb","sdfsfdsfs","r4ed","hhhhh"];
     }
 }
