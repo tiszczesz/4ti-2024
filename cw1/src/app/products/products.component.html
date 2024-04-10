@@ -1,0 +1,20 @@
+<h2>products works!</h2>
+
+<table class="table table-striped">
+    <thead>
+        <th>Nazwa</th>
+        <th>Cena</th>
+        <th>Data</th>
+        <th>Opis</th>
+    </thead>
+    <tbody>
+        @for (item of products; track item) {
+            <tr>
+                <td>{{item.Name}}</td>
+                <td>{{item.Price}}</td>
+                <td>{{item.Date}}</td>
+                <td>{{item.Description}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
