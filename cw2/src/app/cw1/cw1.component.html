@@ -1,1 +1,8 @@
-<p>cw1 works!</p>
+<h2>Kolory</h2>
+<div class="elem m-2" [style.backgroundColor]="color"></div>
+<select class="form-select" (change)="setColor($event)">
+    @for (color of colors; track color) {
+        <option [value]="color">{{color}}</option>
+    }
+</select>
+
