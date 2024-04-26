@@ -1,1 +1,28 @@
 <p>cw2 works!</p>
+
+<h2>Zbiór filmów: {{filmsList.length}}</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Lp</th>
+        <th>Tytuł</th>
+        <th>Reżyser</th>
+        <th>Cena</th>
+        <th>Data realizacji</th>
+        <th>Język</th>
+    </tr>
+    </thead>
+    <tbody>
+        @for (item of filmsList; track $index) {
+            <tr>
+                <td>{{$index+1}}</td>
+                <td>{{item.Title}}</td>
+                <td>{{item.Director}}</td>
+                <td>{{item.Price}}</td>
+                <td>{{item.Date}}</td>
+                <td>{{item.Language}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
