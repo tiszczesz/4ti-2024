@@ -1,0 +1,10 @@
+<h1>Główny komponent</h1>
+<div>{{info1}}</div>
+<hr>
+<div [innerHTML]=info1></div>
+<div [style]="{color:myColor}">To jest do styli</div>
+<hr>
+<div [className]="isOpen?'bordered':''">isOpen: {{isOpen}}</div>
+<input type="button" value="Kliknij mnie" (click)="handleClick($event)">
+<hr>
+<input type="button" value="Kolor" (click)="changeColor($event)">
