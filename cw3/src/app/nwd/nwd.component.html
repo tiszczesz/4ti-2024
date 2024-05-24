@@ -1,0 +1,12 @@
+<p>Obliczanie NWD</p>
+<div class="row m-3">
+    <label class="col-3 text-end p-2">a = </label>
+    <input class="col-6" type="number" min="0" max="1000" [(ngModel)]="a">
+</div>
+<div class="row m-3">
+    <label class="col-3 text-end p-2">b = </label>
+    <input class="col-6" type="number" min="0" max="1000" [(ngModel)]="b">
+</div>
+<div>{{a}} + {{b}} = {{a+b}}</div>
+<hr>
+<div>NWD({{a}},{{b}}) = {{nwd(a,b)}}</div>

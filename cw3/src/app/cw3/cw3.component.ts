@@ -9,6 +9,6 @@ import { FormsModule, } from '@angular/forms';
   styleUrl: './cw3.component.css'
 })
 export class Cw3Component {
-name: any;
+  name: any;
 
 }
